@@ -16,10 +16,10 @@
       <br />
       <h1 class="text-3xl">크림 헤더</h1>
     </div>
-    <!-- 모바일 헤더 -->
-    <div class="lg:hidden">
-      <header class="">
-        <a href="/">
+    <!-- 767px 이하 : 헤더 -->
+    <div class="md:hidden">
+      <header class="border-b flex p-4 relative z-10">
+        <a class="mr-auto" href="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="134" height="22" viewBox="0 0 134 22" fill="none">
             <title>크림</title>
             <path d="M107.536 0.288574L101.235 21.7118H107.956L111.737 9.73998L113.627 18.3513H117.408L124.339 9.73998L120.978 21.5017H127.699L134 0.288574H126.649L118.458 10.16H117.408L115.097 0.288574H107.536Z" fill="#303033" />
@@ -54,21 +54,21 @@
           </svg>
         </button>
       </header>
-      <nav class="">
-        <ul class="">
+      <nav class="p-4 grid grid-rows-[40px_1fr] fixed top-14 right-0 bottom-0 w-48 bg-white shadow-lg">
+        <ul class="space-y-2 text-center">
           <li><a href="/">고객센터</a></li>
           <li><a href="/">마이페이지</a></li>
           <li><a href="/">관심</a></li>
           <li><a href="/">알림</a></li>
           <li><a href="/">로그인</a></li>
         </ul>
-        <button class="" type="button" class="" aria-label="메뉴 닫기">
+        <button class="-order-1 justify-self-end" type="button" class="" aria-label="메뉴 닫기">
           <span aria-hidden="true">×</span>
         </button>
       </nav>
     </div>
-    <!-- 데스크탑 헤더 -->
-    <div class="hidden lg:block">
+    <!-- 768px 이상 :  헤더 -->
+    <div class="hidden md:block">
       <header>
         <a href="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="134" height="22" viewBox="0 0 134 22" fill="none">
