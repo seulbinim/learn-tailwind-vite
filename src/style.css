@@ -19,7 +19,7 @@
   /* --buliding: url(../src/assets/images/building.avif); */
   --building: url(../src/assets/images/building.avif);
 
-  --autofit: repeat(auto-fit, minmax(240px, 1fr));
+  --autofit: repeat(auto-fit, minmax(240px, 1fr))
 }
 
 @layer components {
