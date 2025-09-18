@@ -181,3 +181,23 @@
 .airpods-pro {
   background-image: image-set(url(/src/assets/apple/airpods_pro.avif) 1x, url(/src/assets/apple/airpods_pro_2x.avif) 2x);
 }
+
+/* 카드 레이아웃 */
+/* 카드 레이아웃 */
+.product-list {
+  --column-count: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), minmax(300px, 1fr));
+  gap: var(--base-spacing);
+
+  @media (min-width: 1024px) {
+    --column-count: 2;
+
+    .ipad-pro,
+    .ipad-air,
+    .iphone15-pro {
+      grid-column: span 2;
+    }
+  }
+}
