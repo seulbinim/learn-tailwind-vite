@@ -1,1 +1,36 @@
 @import 'tailwindcss';
+
+:root {
+  --likelion: #ffa500;
+}
+
+/* 사용자 정의 변수 활용 */
+@theme {
+  /* 글자크기 사용자 정의 */
+  --text-xxs: 0.625rem;
+
+  /* --*: initial; */
+  /* Color 변수 정의 */
+  /* --color-*: initial; */
+  --color-likelion: var(--likelion);
+  --color-likelion-black: #303033;
+  --color-likelion-red: #b02c20;
+  --color-likelion-green: #58dc76;
+  --color-likelion-silver: #f5f5f5;
+
+  /* 웹 폰트(SUIT) 사용자 정의 */
+  --font-suit: 'SUIT Variable';
+
+  /* 애니메이션 사용자 정의 */
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
