@@ -37,3 +37,37 @@
   /* 중단점(Breakpoint) 재정의 */
   --breakpoint-sm: 30rem;
 }
+
+@layer components {
+  /* @apply 디렉티브 */
+  .card {
+    @apply flex flex-col gap-2 items-center sm:flex-row sm:gap-4 p-5 border border-gray-400 rounded-2xl;
+
+    img {
+      @apply rounded-full w-24 h-24 shrink-0 basis-0;
+    }
+
+    figcaption {
+      @apply contents sm:block sm:grow sm:space-y-2 md:-order-1;
+
+      p:nth-of-type(1) {
+        @apply text-lg font-semibold;
+      }
+
+      p:nth-of-type(2) {
+        @apply font-medium text-gray-500;
+      }
+
+      button {
+        @apply rounded-full px-2 py-1 border border-purple-200 text-purple-600;
+      }
+    }
+  }
+}
+
+@utility flex-center {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
