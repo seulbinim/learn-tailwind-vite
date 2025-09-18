@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './ui/homework/apple-utility-classes.css';
 
 :root {
   --likelion: #ffa500;
