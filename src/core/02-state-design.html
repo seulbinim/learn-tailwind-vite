@@ -18,8 +18,10 @@
       <img class="shrink-0 w-32 h-32 rounded-full" src="/src/assets/images/character-01.jpg" alt="" />
       <div class="flex-1 flex flex-col gap-2 items-start">
         <p class="text-slate-600 text-xl font-bold">Erin Lindford</p>
-        <p class="text-slate-400 font-semibold">Product Engineer</p>
-        <button class="mt-auto border px-2 py-1 rounded-3xl text-purple-500" type="button">Message</button>
+        <p class="before:content-['Role:'] before:mr-2 text-slate-400 font-semibold">Product Engineer</p>
+        <!-- 마우스 호버와 키보드 포커스 시 글자 색상 및 배경 색상 변경 -->
+        <!-- before 선탹자를 이용하여 Role 텍스트를 추가 -->
+        <button class="transition focus:outline-0 focus:text-violet-50 focus:bg-violet-800 hover:text-violet-50 hover:bg-violet-800 mt-auto border px-2 py-1 rounded-3xl text-purple-500" type="button">Message</button>
       </div>
     </div>
   </body>
