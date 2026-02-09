@@ -9,3 +9,8 @@
 :root {
   --size: 410px;
 }
+
+/* shape-outside 속성을 유틸리티 클래스로 추가 */
+@utility shape-circle {
+  shape-outside: circle(50%);
+}
