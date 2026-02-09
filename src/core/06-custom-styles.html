@@ -14,7 +14,18 @@
     <a href="/index.html">메인 페이지 이동</a>
     <br />
     <h1 class="my-5 text-3xl font-bold text-blue-950">사용자 정의 스타일</h1>
-    <div class="min-w-min flex gap-4 border rounded-lg px-6 py-4">
+    <!-- 임의의 값으로 유틸리티 클래스를 선언 (가로 크기가 370px 일 때) -->
+    <div class="w-[370px] min-w-min flex gap-4 border rounded-lg px-6 py-4">
+      <img class="shrink-0 w-32 h-32 rounded-full" src="/src/assets/images/character-01.jpg" alt="" />
+      <div class="flex-1 flex flex-col gap-2 items-start">
+        <p class="text-slate-600 text-xl font-bold">Erin Lindford</p>
+        <p class="text-slate-400 font-semibold">Product Engineer</p>
+        <button class="mt-auto border px-2 py-1 rounded-3xl text-purple-500" type="button">Message</button>
+      </div>
+    </div>
+    <hr class="my-5" />
+    <!-- CSS 변수를 유틸리티 클래스에 지정 (가로 크기가 410px 일 때) -->
+    <div class="w-(--size) min-w-min flex gap-4 border rounded-lg px-6 py-4">
       <img class="shrink-0 w-32 h-32 rounded-full" src="/src/assets/images/character-01.jpg" alt="" />
       <div class="flex-1 flex flex-col gap-2 items-start">
         <p class="text-slate-600 text-xl font-bold">Erin Lindford</p>

@@ -1,2 +1,11 @@
 @import 'tailwindcss';
 @import './core/styles/theme-variable.css';
+
+@theme {
+  /* SUIT 글꼴 추가 */
+  --font-suit: 'SUIT Variable', sans-serif;
+}
+
+:root {
+  --size: 410px;
+}
